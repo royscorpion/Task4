@@ -28,8 +28,15 @@ namespace Task_4._2_LoopDo
             } while (number != 0);
 
             Console.WriteLine("Введено {0} положительных и {1} отрицательных чисел.",positiveNumber,negativeNumber);
-            Console.WriteLine(negativeNumber > positiveNumber ?"Количество отрицательных чисел больше, чем положительных":"Количество положительных чисел больше, чем отрицательных");
-
+            if (negativeNumber!=positiveNumber)
+            {
+                Console.WriteLine(negativeNumber > positiveNumber ? "Количество отрицательных чисел больше, чем положительных" : "Количество положительных чисел больше, чем отрицательных");
+            }
+            else
+            {
+                Console.WriteLine("Количество отрицательных и положительных чисел одинаково.");
+            }
+            
             Console.WriteLine("Для завершения нажмите любую клавишу на клавиатуре");
             Console.ReadKey();
         }
