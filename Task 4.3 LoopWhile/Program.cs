@@ -15,19 +15,19 @@ namespace Task_4._3_LoopWhile
             double sideA, sideB, sideC;
             Console.WriteLine("Введите длины двух сторон прямоугольника (A, B) и стороны квадрата (C).");
             Console.Write("Сторона прямоугольника A: ");
-            while ((sideA = Convert.ToDouble(Console.ReadLine()))<=0)
+            while ((sideA = Convert.ToDouble(Console.ReadLine())) <= 0)
             {
-                Console.Write("Длина стороны не может быть отрицательной или равной нулю.\nВведите введите корректную длину: ");
+                Console.Write("Длина стороны не может быть отрицательной или равной нулю.\nВведите корректную длину: ");
             }
             Console.Write("Сторона прямоугольника B: ");
             while ((sideB = Convert.ToDouble(Console.ReadLine())) <= 0)
             {
-                Console.Write("Длина стороны не может быть отрицательной или равной нулю. \nВведите введите корректную длину: ");
+                Console.Write("Длина стороны не может быть отрицательной или равной нулю. \nВведите корректную длину: ");
             }
             Console.Write("Сторона квадрата C: ");
             while ((sideC = Convert.ToDouble(Console.ReadLine())) <= 0)
             {
-                Console.Write("Длина стороны не может быть отрицательной или равной нулю. \nВведите введите корректную длину: ");
+                Console.Write("Длина стороны не может быть отрицательной или равной нулю. \nВведите корректную длину: ");
             }
             #endregion
 
@@ -51,7 +51,7 @@ namespace Task_4._3_LoopWhile
                 Console.WriteLine("Квадрат не поместится внутри прямоугольника.");
             }
 
-            Console.WriteLine("Максимальное количество квадратов, которые можно разместить внутри контура прямоугольника - {0}", squareQty);
+            Console.WriteLine("Внутри контура прямоугольника со сторонами {1}x{2} можно разместить {0} квадратов со стороной {3}", squareQty, sideA, sideB, sideC);
 
 
             Console.WriteLine("Для завершения нажмите любую клавишу на клавиатуре");
